@@ -1,0 +1,33 @@
+Gradebook Project
+
+Process:
+
+    1. Created a workbook and added 15 employee names with the columns safety test, Company Philosophy test, Financial skills test, Drug test
+    2. To format the column names, use the orientation for a better representation. Format > Orientation > Tilt-up (Rotate the text up)
+    3. Align the points to the test. Here I allocated 10.20.100 and 1 respectively according to point 1
+    4. Filled in the data for representation
+    5. To find out the percentage that they have scored, do the individual score/test score eg: C4/C2
+    6. Convert the number to a percentage. Home> Percentage
+    7.  The results are wrong when the formula is copied and pasted due to the relative referencing error. To clear, use absolute referencing, give a dollar sign before the row number. C$2 for example here.
+    8. Find out the percentages for all the numbers. Use the fill command as it is the same formula for all the tests
+    9. Use of conditional formatting: for better representation of the test results
+    10. Conditional formatting > Color scale > Choose a good representation
+    11. Finding out who scored less than 50%. Select all the percentage scores and use conditional formatting. To find out who has less than 50% of the scores, use conditional formatting > choose the cell range > select less than > reference a value or a cell number > Apply
+    12. To see if you need to terminate an employee, an employee should have less than 50% in the test.
+    13. Use of “OR” -  we use OR to compare if any percentage is less than 0.5/50%. If yes, then it returns TRUE, if not then FALSE
+    14. FORMAT - OR(logic_1,logic_2…). Here the logic is OR(H4<.5, I4<.5, J4<.5, K4<.5) - IF any of the logic works, then it returns True
+    15. Conditional formatting > Select the cell range > Select the value to be “TRUE” and format accordingly.
+    16. Find out the min, max and average values in both percentages and values
+
+Usage of Charts:
+
+> Insert > Column Chart > Add the chart > Edit the name of the chart
+> To change the horizontal axis to the names of employees for representation.
+
+
+Key Points:
+
+    1. For absolute cell referencing of a particular cell, use the $ sign after the column and before the number
+    2. Fill command helps to process and deliver the same result faster
+    3. Conditional formatting needs to be done to individual columns. The use of “Fill” can give different results.
+
